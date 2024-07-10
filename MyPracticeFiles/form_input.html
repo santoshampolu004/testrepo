@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form Inputs</title>
+  </head>
+  <body>
+    <form action="main.js" method="get">
+      <fieldset>
+        <legend>my practice</legend>
+        <label for="Name">Full Name</label>
+        <input
+          type="text"
+          id="Name"
+          name="FName"
+          required
+          minlength="5"
+          maxlength="10"
+        />
+        <br />
+        <label for="Age">Age</label>
+        <input
+          type="number"
+          id="Age"
+          name="Age"
+          min="21"
+          minlength="2"
+          maxlength="10"
+        />
+        <br />
+        <input type="color" name="clr" id="color" /><br /><br />
+        <input type="date" name="" id="" /><br /><br />
+        <input type="time" name="" id="" /><br /><br />
+        <input type="datetime-local" name="" id="" /><br /><br />
+        <input type="month" name="" id="" /><br /><br />
+        <input type="tel" /><br /><br />
+        <input type="number" /><br /><br />
+        <input type="week" /><br /><br />
+        <input type="url" /><br /><br />
+        <input type="search" /><br /><br />
+
+        <input type="checkbox" required checked name="skill" id="HTML" />
+        <label for="HTML">HTML</label>
+        <input type="checkbox" name="skill" id="CSS" />
+        <label for="CSS">CSS</label>
+        <input type="checkbox" name="skill" id="JS" />
+        <label for="JS">JS</label> <br /><br />
+
+        <label>Information Type:</label>
+        <input type="radio" required name="InfoType" id="Public" />
+        <label for="Public">Public</label>
+        <input type="radio" required name="InfoType" id="Private" />
+        <label for="Private">Private</label>
+        <input type="radio" required name="InfoType" id="NA" />
+        <label for="NA">NA</label><br /><br />
+
+        <label for="">Gender:</label>
+        <input type="radio" name="gender" id="Female" />
+        <label for="male">Female</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label><br /><br />
+
+        <label for="state">Select State</label>
+        <select name="state" id="state">
+          <option value="AP">AP</option>
+          <option value="TG">TG</option>
+          <option value="MH">MH</option>
+          <option value="KA">KA</option>
+          <option value="KL">KL</option>
+        </select>
+
+        <br /><br />
+        <label for="abc">Preferred Locations</label>
+        <select multiple size="5" name="prefLoc" id="abc">
+          <optgroup label="Telangana">
+            <option label="Hyderabad">Hyderabad</option>
+          </optgroup>
+
+          <optgroup label="Kerala">
+            <option value="kochi">Kochi</option>
+          </optgroup>
+
+          <optgroup label="Andhra Pradesh">
+            <option value="Vizag">Vizag</option>
+          </optgroup>
+          <option value="Bubaneshwar">Bubaneshwar</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Bengaluru">Bengaluru</option>
+          <option value="Ahmedabad">Ahmedabad</option>
+          <option value="Gurgaon">Gurgaon</option>
+          <option value="delhi">delhi</option>
+          <option value="pune">pune</option>
+        </select>
+        <br /><br />
+        <label for="IceCreamChoice">Choose a flovour:</label>
+        <input
+          list="IceCreamFlavours"
+          id="IceCreamChoice"
+          name="IceCreamChoice"
+        />
+
+        <input type="hidden" name="Jobname" value="Dev" />
+        <input type="text" name="Role" value="Manager" disabled />
+
+        <datalist id="IceCreamFlavours">
+          <option value="Vanila">Vanila</option>
+          <option value="Butterscotch">Butterscotch</option>
+          <option value="Pista">Pista</option>
+          <option value="Chocolate">Chocolate</option>
+          <option value="strawberry">strawberry</option>
+        </datalist>
+      </fieldset>
+      <input type="file" name="AddressProof" id="ADRPF" /><br />
+      <a href="www.google.com" target="_blank">hello</a>
+      <picture>
+        <source media="(min-width:1080px)" srcset="" />
+        <source srcset="" />
+        <img src="" alt="" />
+      </picture>
+      <video height="200" autoplay muted controls>
+        <source src="" />
+      </video>
+      <audio autoplay muted>
+        <source src="" />
+      </audio>
+
+      <br /><br />
+      <input type="reset" value="rest all" />
+      <input type="button" value="xyz" />
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
