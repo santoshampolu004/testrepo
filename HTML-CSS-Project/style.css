@@ -59,13 +59,13 @@ a{
     text-align: left;
     line-height: 30px;
 }
-/*
+
 #banner-context #buttons{
     display: flex;
     gap: 20px;
     justify-content: space-evenly;
 }
-*/
+
 #banner-context h1 span{
     color: var(--Primary-color);
 }
