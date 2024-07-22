@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    --Primary-color:rgb(251, 21, 59);
+}
+
+header{
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content:space-between;
+    padding: 10px 40px;
+    margin: 0px;
+    align-items: center;
+}
+.logo{
+    font-size: 40px; 
+}
+.logo span{
+    color: var(--Primary-color);
+}
+.menu ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+    
+    
+}
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+}
+#banner-context{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+#banner-context h1{
+    font-size: 30px;
+}
+#banner-context p{
+    font-size: 20px;
+    text-align: left;
+    line-height: 30px;
+}
+/*
+#banner-context #buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+*/
+#banner-context h1 span{
+    color: var(--Primary-color);
+}
+#buttons button{
+    padding: 20px;
+    border-radius: 15px;
+}
+#buttons button:nth-child(2){
+    background-color: white;
+
+}
+#buttons button:nth-child(2) a{
+color: black;
+}
+#buttons button:nth-child(1){
+    background-color: black;
+
+
+}
+
+#buttons button:nth-child(1):hover{
+    background-color: var(--Primary-color);
+}
+#buttons button:nth-child(2):hover{
+    background-color: var(--Primary-color);
+}
+
+/* Media Queries */
+@media(max-width:768px){
+header{
+    flex-direction: column;
+}
+.menu ul{
+    flex-direction: column;
+}
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}

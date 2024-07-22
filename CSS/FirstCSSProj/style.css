@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+/*
+img{
+    float: right;
+    height: 200px;
+}
+p{
+    clear: both;
+}
+*/
+.main{
+    height: 800px;
+    width: 800px;
+    border: 2px solid black;
+}
+.box{
+    height: 500px;
+    width: 200px;
+    background-color: grey;
+    color: black;
+    margin: 5px;
+}
+
+.box1{
+    background-color: red;
+    position:relative;
+    height: 300px;
+    top: 55px;
+    left: 200px;
+}
+.box5{
+    position: fixed;
+    right: 0px ;
+    bottom: 0px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+.box4{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
